@@ -19,7 +19,8 @@ class MailService {
       to: config.smtpEmail,
       subject: `${infoName} - Desde ${config.domain}`,
       text: 
-      `Telefono: ${infoPhone}
+      `Nombre: ${infoName}
+      Telefono: ${infoPhone}
       Mensaje: ${infoMessage}
       Correo: ${infoMail}`
     })
