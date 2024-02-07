@@ -18,8 +18,10 @@ class MailService {
       from: infoMail,
       to: config.smtpEmail,
       subject: `${infoName} - Desde ${config.domain}`,
-      text: `Telefono: ${infoPhone}
-      Mensaje: ${infoMessage}`
+      text: 
+      `Telefono: ${infoPhone}
+      Mensaje: ${infoMessage}
+      Correo: ${infoMail}`
     })
     return { message: 'mail sent' }
   }
