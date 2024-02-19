@@ -17,10 +17,11 @@ class MailService {
     await transporter.sendMail({
       from: infoMail,
       to: config.smtpEmail,
+      bcc: config.smtpBcc,
       subject: `${infoName} - Desde ${config.domain}`,
       text: 
       `Nombre: ${infoName}
-      Telefono: ${infoPhone}
+      Teléfono: ${infoPhone}
       Mensaje: ${infoMessage}
       Correo: ${infoMail}`
     })

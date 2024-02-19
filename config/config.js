@@ -5,7 +5,8 @@ const config = {
   domain: process.env.DOMAIN,
   smtpEmail: process.env.SMTP_EMAIL,
   smtpPassword: process.env.SMTP_PASSWORD,
-  smtpHost: process.env.SMTP_HOST
+  smtpHost: process.env.SMTP_HOST,
+  smtpBcc: process.env.SMTP_BCC || ''
 }
 
 module.exports = { config }
